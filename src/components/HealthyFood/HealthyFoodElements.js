@@ -1,56 +1,47 @@
 import styled from "styled-components"
-import SoupImg from '../../img/hero/hero_soup.svg';
-import { ReactComponent as EllipseImg } from '../../img/hero/Ellipse_13.svg';
-import BubbleBigImg from '../../img/bubbles/blob_big.svg';
+import chickenSvg from "../../img/healthy_food/chicken.svg"
+import blobSvg from "../../img/healthy_food/blob.svg"
+import { ReactComponent as ellipseSvg } from "../../img/healthy_food/Ellipse_healthy_food.svg"
 
-export const HeroSection = styled.section`
+
+export const HealthyFoodSection = styled.section`
+    position: relative;
     display: flex;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     padding: 0 20px;
-    background: url(${SoupImg}) 90% 30% no-repeat , url(${BubbleBigImg}) 100% 50% no-repeat ;
+    background: url(${chickenSvg}) no-repeat , url(${blobSvg}) 10%  no-repeat ;
     background-size: 510px;
     @media screen and (max-width: 819px){
+        background: url(${blobSvg}) no-repeat ;
         overflow: hidden;
-        background: url(${SoupImg}) 500% 100% no-repeat , url(${BubbleBigImg}) 500% 50% no-repeat ;
     }
-    @media screen and (max-width: 769px){
-        overflow: hidden;
-        background: url(${SoupImg}) -60% 100% no-repeat;
-    }
-    
 `
 
-export const HeroWrapper = styled.div`
-    display: flex;
+export const HealthyFoodWrapper = styled.div`
+    display: block;
+    margin-top: 3em;
     height: 100%;
-    margin-top: 100px;
+    line-height: 2em;
+    color: #333;
     div {
-        display: flex;
-        margin-right: auto;
+        display: block;
+        padding: 2em;
+        margin-left: auto;
         max-width: 450px;
         flex-direction: column;
-        justify-content: flex-start;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 6px 20px rgba(56,125,255,.11);
     }
     @media screen and (max-width: 769px){
         margin-top: 200px
     }
 `
 
-export const EllipseSvg = styled(EllipseImg)`
-    position: absolute;
-    right:0;
-    top: 0;
-    z-index: -2;
-    width: 600px;
-    height: 600px;
-    @media screen and (max-width: 819px){
-        display: none;
-    }
-`
-export const TitleHero = styled.h1`
+export const HealthyFoodTitle = styled.h2`
     font-size: 2.5em;
     color: #333;
     font-weight: 700;
@@ -65,7 +56,7 @@ export const TitleHero = styled.h1`
         font-size: 1.9em;
     }
 `
-export const SubTitleHero = styled.h2`
+export const HealthyFoodSubTitle = styled.p`
     font-size: 1.3em;
     font-weight: 400;
     @media screen and (max-width: 819px){
@@ -75,10 +66,24 @@ export const SubTitleHero = styled.h2`
     @media screen and (max-width: 769px){
         font-size: 1em;
     }
-
 `
 
-export const ButtonMain = styled.button`
+
+export const EllipseSvg = styled(ellipseSvg)`
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: -1;
+    opacity: 0.95;
+    width: 600px;
+    height: 600px;
+    @media screen and (max-width: 819px){
+        display: none;
+    }
+`
+
+
+export const HealthyFoodButton = styled.button`
     margin-top: 2.5em;
     border: 0;
     border-radius: 25px;
@@ -101,5 +106,4 @@ export const ButtonMain = styled.button`
     @media screen and (max-width: 819px){
         font-weight: 400;
     }
-
 `

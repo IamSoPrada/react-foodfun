@@ -90,7 +90,7 @@ export const Logo = styled.div`
     color: #ff9100;
     cursor: pointer;
     span {
-        color: #000;
+        color: #333;
     }
     @media screen and (max-width: 600px){
         font-size: 1.5rem;

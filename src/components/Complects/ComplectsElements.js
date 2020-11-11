@@ -4,6 +4,7 @@ export const ComplectsContainer = styled.div`
     padding-bottom: 40px;
     margin-top: 120px;
     color: #333;
+    
 `;
 
 export const ComplectsWrapper = styled.div`
@@ -24,10 +25,11 @@ export const ComplectsWrapper = styled.div`
 `;
 
 export const ComplectsCard = styled.div`
+    display: grid;
+    grid-template-rows: 1fr;
     justify-self: center;
     line-height: 1.7;
     width: 300px;
-    border: 0;
     border-radius: 8px;
     box-shadow: 0 6px 20px rgba(56,125,255,.11);
 `;
@@ -38,6 +40,7 @@ export const ComplectsImg = styled.img`
     object-position: bottom;
     height: 250px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 `;
 
 export const ComplectsHeading = styled.h1`
@@ -52,7 +55,9 @@ export const ComplectsTitle = styled.h2`
 `;
 
 export const ComplectsInfo = styled.div`
-    display: flex;
+    display: grid;
+    background: #fff;
+    grid-template-columns: 1fr;
     flex-direction: column;
     justify-content: center;
     align-items: center;
