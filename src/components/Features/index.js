@@ -10,7 +10,7 @@ const Features = () => {
                 <FeaturesCard>
                     <FeaturesCardIcon><img src={icon1} alt="#"/></FeaturesCardIcon>
                     <FeaturesCardTitle>Только свежие блюда</FeaturesCardTitle>
-                    <FeaturesCardDesr>Мы гордимся, что именно у нас работают лучшая команда поворов по версии рейтинга CookingDaily.</FeaturesCardDesr>
+                    <FeaturesCardDesr>Мы гордимся, что именно у нас работают лучшая команда поваров по версии рейтинга CookingDaily.</FeaturesCardDesr>
                 </FeaturesCard>
                 <FeaturesCard>
                     <FeaturesCardIcon><img src={icon2} alt="#"/></FeaturesCardIcon>
